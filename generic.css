@@ -1,0 +1,123 @@
+
+/* from w3, overflow makes the bar take up space;
+background color is the bar color; padding can influence bar width, space around words (content/text)*/
+.header {
+    overflow: hidden;
+    background-color: black;
+    padding: 20px 10px;
+  }
+  
+  /* from w3 schools, to style the header links (nav links) 
+  just put the class selector, class, then sub-element (a tag)*/
+  .header a {
+    float: left;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: 'Kanit', sans-serif;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .header {
+    width: 100%;
+  }
+
+  .header input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+@keyframes h3 {
+    from {background-color:pink;}
+    to {background-color:goldenrod;}
+  }
+  
+h3{
+  width: 100x;
+  height: 100px;
+  background-color: pink;
+  animation-name: h3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+h3{
+  text-align: center;
+}
+
+body{
+    font-family: 'DotGothic16', sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    text-shadow: aqua;
+    text-align: center;
+
+    
+}
+
+p.beyonce{ 
+    font-family: 'DotGothic16', sans-serif;
+    font-size: small;
+    position:static;
+    text-align: left;
+    letter-spacing: 0px;
+    padding-top: 10px;
+    border-radius: 100px;
+}
+
+.vid{
+  position: center;
+  text-align: center;
+  border:chocolate;
+  background-color: cornflowerblue;
+  border-width: 2in;
+  border-color: cornsilk;
+}
+.footer{
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  
+}
+
+
+.footer a{
+    float: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    position:static;
+    font-family:'Kanit', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    border:hotpink;
+    border-style: solid;
+    border-width: 4px;
+
+}
+
+.footer a:hover {
+  color:blueviolet;
+  background-color: chartreuse;
+}
