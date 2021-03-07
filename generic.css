@@ -80,6 +80,21 @@ p.beyonce{
     border-radius: 100px;
 }
 
+.buttons{
+        margin-left: 10px;
+        margin-right: 10px;;
+        width: 250px;
+        height: 500px;
+        text-align: center;
+        color: blue;
+        position: absolute;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 50px;
+        padding-left: 50px;
+        
+
+
 .vid{
   position: center;
   text-align: center;
