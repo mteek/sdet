@@ -59,6 +59,36 @@ h3{
   text-align: center;
 }
 
+.dash{
+  margin: 5px 5px 0px 5px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  background-color: #dbacd9;
+  border-radius: 2%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ff00ff;
+  color:#ff00ff;
+  text-align: center;
+  float: left;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.buttons{
+  width: 250px;
+  height: 600px;
+}
+
+.btn{
+  color: #ff00ff;
+  margin: 10px 30px 10px 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20x;
+  border-radius: 5%;
+
+}
 body{
     font-family: 'DotGothic16', sans-serif;
     font-size: x-large;

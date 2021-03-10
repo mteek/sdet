@@ -58,6 +58,36 @@ h3{
 h3{
   text-align: center;
 }
+.dash{
+  margin: 5px 5px 0px 5px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  background-color: #dbacd9;
+  border-radius: 2%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ff00ff;
+  color:#ff00ff;
+  text-align: center;
+  float: left;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.buttons{
+  width: 250px;
+  height: 600px;
+}
+
+.btn{
+  color: #ff00ff;
+  margin: 10px 30px 10px 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20x;
+  border-radius: 5%;
+
+}
 
 body{
     font-family: 'DotGothic16', sans-serif;
@@ -74,26 +104,23 @@ p.sza{
     font-size: small;
     position:static;
     text-align: left;
-    letter-spacing: 0px;
-    padding-top: 10px;
-    border-radius: 100px;
 }
 
+.container{
+    margin:0px 0px 20px 0px; 
+
+}
 .vid{
   position: center;
   text-align: center;
-  border:chocolate;
-  background-color: cornflowerblue;
-  border-width: 2in;
-  border-color: cornsilk;
 }
 .footer{
-    width: 100%;
-    overflow: hidden;
-    background-color: black;
     margin: 0;
     border: 0;
     padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
   
 }
 
