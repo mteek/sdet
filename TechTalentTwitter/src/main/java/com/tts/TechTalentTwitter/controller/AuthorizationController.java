@@ -27,6 +27,7 @@ public class AuthorizationController {
     public String registration(Model model){
         User user = new User();
         model.addAttribute("user", user);
+        
         return "registration";
     }
 
@@ -41,7 +42,9 @@ public class AuthorizationController {
             model.addAttribute("success", "Sign up successful!");
             model.addAttribute("user", new User());
         }
-        return "registration";
+        return "login";
     }
+    
+    
 
 }

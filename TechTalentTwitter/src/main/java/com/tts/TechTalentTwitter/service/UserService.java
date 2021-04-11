@@ -20,7 +20,13 @@ public class UserService {
     private UserRepository userRepository;
     private RoleRepository roleRepository;
     private BCryptPasswordEncoder bCryptPasswordEncoder;
-
+    //bcrypt is a library that helps
+    //us to encrypt passwords
+    //it's illegal to have passwords
+    //in plain text
+    //in databases 
+    //because dbs can be hacked
+    
     @Autowired
     public UserService(UserRepository userRepository, 
                        RoleRepository roleRepository,
@@ -29,6 +35,12 @@ public class UserService {
         this.roleRepository = roleRepository;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
+    
+    //this constructor takes in all three of 
+    //our imports as args
+    //it means that the UserService
+    //is equal to whatever
+    //is passed in 
 
     public User findByUsername(String username) {
         return userRepository.findByUsername(username);
@@ -49,13 +61,20 @@ public class UserService {
         user.setRoles(new HashSet<Role>(Arrays.asList(userRole)));
         return userRepository.save(user);
     }
-
+    //method to save a new user ^^^
+    
+    
     public User getLoggedInUser() {
         String loggedInUsername = SecurityContextHolder.
           getContext().getAuthentication().getName();
         
         return findByUsername(loggedInUsername);
     }
-    }
 
+	//public User getSignedUpUser () {
+	//	String signedUpUser = SecurityContextHolder.
+	//			getContext().getAuthentication().getName();
+	//	return findByUsername(signedUpUser);
+	//}
+}
 

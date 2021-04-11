@@ -40,7 +40,7 @@ public class FollowController {
 		
 	}
 	
-	@PostMapping(value = "/follow/{username}")
+	@PostMapping(value = "/unfollow/{username}")
 	public String unfollow(@PathVariable(value="username") String username,HttpServletRequest request) {
 		User loggedInUser = userService.getLoggedInUser();
 		User userToUnfollow = userService.findByUsername(username);

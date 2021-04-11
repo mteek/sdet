@@ -28,7 +28,19 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+/**
+ * 
+ * @author Mackenzie
+ *
+ */
+
+//some notes on models/model file
+//this file keeps our main data
+//about the User
+//all the setters and getters 
+//and other user-related methods are here
+@Data //@Data identifies that it's a model
+	  //file
 @Builder
 
 @AllArgsConstructor
@@ -69,6 +81,11 @@ public class User {
 	@JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), 
 	    inverseJoinColumns = @JoinColumn(name = "role_id"))
 	private Set<Role> roles;
+	//set is like a list
+	//but no duplicates
+	//casacde means 
+	//all the objects in the set
+	//cascades down to them
 	
 	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name= "user_follower", joinColumns = @JoinColumn(name = "user_id"),
