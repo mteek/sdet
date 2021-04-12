@@ -53,6 +53,7 @@ public class Tweet {
 
 	@CreationTimestamp
 	private Date createdAt;
+	
 
 	// Use the code below if your lombok is not working:
 	// public Long getId() {

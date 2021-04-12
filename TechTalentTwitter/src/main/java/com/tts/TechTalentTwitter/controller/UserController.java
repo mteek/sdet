@@ -10,6 +10,11 @@ import com.tts.TechTalentTwitter.model.Tweet;
 import com.tts.TechTalentTwitter.model.User;
 import com.tts.TechTalentTwitter.service.TweetService;
 import com.tts.TechTalentTwitter.service.UserService;
+
+
+
+
+
 @Controller
 public class UserController {
 	
@@ -40,7 +45,11 @@ public class UserController {
 		model.addAttribute("following", isFollowing);
 		model.addAttribute("isSelfPage", isSelfPage);
 		return "user";
+		//this boolean is for 
+		//if we are logged in
+		//we appear as the logged in user
 	}
+	
 	@GetMapping(value = "/users")
 	public String getUsers(Model model) {
 		List<User> users = userService.findAll();
@@ -73,3 +82,4 @@ public class UserController {
 	}
 }
 	
+
