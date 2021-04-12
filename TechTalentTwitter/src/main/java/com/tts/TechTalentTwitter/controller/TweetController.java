@@ -30,6 +30,7 @@ public class TweetController {
         List<Tweet> tweets = tweetService.findAll();
         model.addAttribute("tweetList", tweets);
         return "feed";
+        
     }
     
     @GetMapping(value = "/tweets/new")

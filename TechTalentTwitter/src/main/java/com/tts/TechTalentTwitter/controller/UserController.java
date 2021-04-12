@@ -12,10 +12,16 @@ import com.tts.TechTalentTwitter.service.TweetService;
 import com.tts.TechTalentTwitter.service.UserService;
 @Controller
 public class UserController {
+	
+	
 	@Autowired
 	private UserService userService;
 	@Autowired
 	private TweetService tweetService;
+	
+	
+	
+	
 	@GetMapping(value = "/users/{username}")
 	public String getUser(@PathVariable(value = "username") String username, Model model) {
 		User loggedInUser = userService.getLoggedInUser();
@@ -66,3 +72,4 @@ public class UserController {
 		model.addAttribute("followingStatus", followingStatus);
 	}
 }
+	
